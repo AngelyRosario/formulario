@@ -1,4 +1,89 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #111111;
+  border-radius: 8px;
+  background-color: #513269;
 }
 
+.container {
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
+}
+
+.form-image {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  margin: 0 auto 20px; /* Centra la imagen y agrega espacio debajo */
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.datos label {
+  font-size: 1rem;
+  color: #fcfcfc;
+}
+
+.datos input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.datos input[type="text"]:focus {
+  border-color: #391749;
+  outline: none;
+}
+
+.datos div {
+  margin-top: 10px;
+  color: #fafafa;
+}
+
+.datos label input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #53305c; /* Color del radio button */
+}
+
+.datos div label {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fafafa;
+}
+
+.datos div label:hover {
+  color: #8049ad;
+}
+
+.datos div label input[type="radio"]:checked + span {
+  color: #8049ad;
+  font-weight: bold;
+}
+
+.registrar-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #230e31;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registrar-btn:hover {
+  background-color: #afadb1;
+  color: #000000;
+}
